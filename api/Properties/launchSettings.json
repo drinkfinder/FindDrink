@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:52720",
-      "sslPort": 44331
+      "applicationUrl": "http://localhost:60265",
+      "sslPort": 44354
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Drinkfinder.Api": {
+    "drinkfinder.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

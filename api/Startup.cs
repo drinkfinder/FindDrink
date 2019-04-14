@@ -2,31 +2,41 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using drinkfinder.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using drinkfinder.Models;
-using System.Collections;
-using Microsoft.EntityFrameworkCore;
 
-namespace Drinkfinder.Api
+namespace drinkfinder.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration) => Configuration = configuration;
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DrinksContext>(options => options.UseInMemoryDatabase("Drinks"));
-            services.AddDbContext<IngredientsContext>(options => options.UseInMemoryDatabase("Ingredients"));
+            services.AddDbContext<DrinkFinderContext>(options => options.UseInMemoryDatabase("Drinks"));
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy", builder => 
+                {
+                    builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -44,6 +54,7 @@ namespace Drinkfinder.Api
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseMvc();
         }
     }

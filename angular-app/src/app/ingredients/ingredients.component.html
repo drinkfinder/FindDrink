@@ -1,0 +1,22 @@
+<h2>My Ingredients</h2>
+
+<div>
+  <label>Ingredient name:
+    <input #ingredientName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(ingredientName.value); ingredientName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="ingredients">
+  <li *ngFor="let ingredient of ingredients">
+    <a routerLink="/detail/{{ingredient.ingredientId}}">
+      <span class="badge">{{ingredient.ingredientId}}</span> {{ingredient.ingredientName}}
+    </a>
+    <button class="delete" title="delete ingredient"
+      (click)="delete(ingredient)">x</button>
+  </li>
+</ul>
+<app-ingredient-search></app-ingredient-search>

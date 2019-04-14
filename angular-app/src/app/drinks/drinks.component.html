@@ -1,0 +1,21 @@
+<h2>My Drinks</h2>
+
+<div>
+  <label>Drink name:
+    <input #drinkName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(drinkName.value); drinkName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="drinks">
+  <li *ngFor="let drink of drinks">
+    <a routerLink="/detail/{{drink.drinkId}}">
+      <span class="badge">{{drink.drinkId}}</span> {{drink.drinkName}}
+    </a>
+    <button class="delete" title="delete drink"
+      (click)="delete(drink)">x</button>
+  </li>
+</ul>

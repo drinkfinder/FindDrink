@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-add-drink',
@@ -6,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-drink.component.css']
 })
 export class AddDrinkComponent implements OnInit {
-
-  constructor() { }
+  @Input() drink: any;
 
   ngOnInit() {
   }
