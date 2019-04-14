@@ -1,0 +1,12 @@
+<div id="search-component">
+  <h4>Ingredient Search</h4>
+
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let ingredient of ingredients$ | async" >
+      
+    </li>
+    
+  </ul>
+</div>
