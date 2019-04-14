@@ -7,7 +7,7 @@ import { HttpClientModule }    from '@angular/common/http';
 import { InMemoryDataService }  from './in-memory-data.service';*/
 
 import { AppRoutingModule }     from './app-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { DrinkDetailComponent }  from './drink-detail/drink-detail.component';
@@ -16,11 +16,12 @@ import { DrinkSearchComponent }  from './drink-search/drink-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientSearchComponent } from './ingredient-search/ingredient-search.component';
-
+import { IngredientFormComponent } from './ingredient-form/ingredient-form.component';
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
 
@@ -39,7 +40,8 @@ import { IngredientSearchComponent } from './ingredient-search/ingredient-search
     MessagesComponent,
     DrinkSearchComponent,
     IngredientsComponent,
-    IngredientSearchComponent
+    IngredientSearchComponent,
+    IngredientFormComponent
   ],
   bootstrap: [ AppComponent ]
 })
