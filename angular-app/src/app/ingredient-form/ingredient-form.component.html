@@ -1,0 +1,16 @@
+<div>
+  <form [formGroup]="musicForm" (ngSubmit)="submit()">
+    <label>
+      <input type="checkbox" formControlName="selectAll">
+      Select/Deselect all
+    </label>
+    <label formArrayName="musicPreferences" *ngFor="let genre of musicForm.controls['musicPreferences'].controls; let i = index">
+      <input type="checkbox" [formControlName]="i">
+      {{musicPreferences[i].genre}}
+    </label>
+  
+    <button>submit</button>
+  </form>
+</div>
+
+
