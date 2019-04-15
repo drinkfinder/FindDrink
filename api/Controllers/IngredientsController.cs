@@ -15,26 +15,26 @@ namespace drinkfinder.Api.Controllers
     
         public IngredientsController(DrinkFinderContext db)
         {
-
             this.db = db;
-
-            if (this.db.Ingredients.Count() == 0){
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 1,
-                    ingredientName = "Orange Juice"
-                });
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 2,
-                    ingredientName = "Whiskey"
-                });
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 3,
-                    ingredientName = "Gin"
-                });
-                
-            }
-            this.db.SaveChanges();
         }
+
+        //     if (this.db.Ingredients.Count() == 0){
+        //         this.db.Ingredients.Add(new Ingredient(){
+        //             ingredientId = 1,
+        //             ingredientName = "Orange Juice"
+        //         });
+        //         this.db.Ingredients.Add(new Ingredient(){
+        //             ingredientId = 2,
+        //             ingredientName = "Whiskey"
+        //         });
+        //         this.db.Ingredients.Add(new Ingredient(){
+        //             ingredientId = 3,
+        //             ingredientName = "Gin"
+        //         });
+                
+        //     }
+        //     this.db.SaveChanges();
+        // }
 
         [HttpGet]
         public IActionResult Get()
