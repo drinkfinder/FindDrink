@@ -1,7 +1,13 @@
 <div id="search-component">
-  <h4>Drink Search</h4>
+<u><h4>Manhatten Instuctiions</h4></u>
+<h5>
+    2 parts bourbon,
+    1 part sweet vermouth,
+    2 dashes angostura bitters,
+    1 dash of orange bitters,
+</h5>
 
-  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <!---<input #searchBox id="search-box" (input)="search(searchBox.value)" /> -->
 
   <ul class="search-result">
     <li *ngFor="let drink of drinks$ | async" >
