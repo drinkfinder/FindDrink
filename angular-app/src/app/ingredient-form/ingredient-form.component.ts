@@ -11,10 +11,20 @@ export class IngredientFormComponent implements OnInit {
 
   musicForm: FormGroup;
   musicPreferences = [
-    { id: 1, genre: 'Pop' },
-    { id: 2, genre: 'Rock' },
-    { id: 3, genre: 'Techno' },
-    { id: 4, genre: 'Hiphop' }
+
+    { id: 1, genre: 'Vodka' },
+    { id: 2, genre: 'Sweet Vermouth' },
+    { id: 3, genre: 'Mint' },
+    { id: 4, genre: 'Rum' },
+    { id: 5, genre: 'Bourbon'},
+    { id: 6, genre: 'Lemonade'},
+    { id: 7, genre: 'Angostura Bitters'},
+    { id: 8, genre: 'Orange Juice'},
+    { id: 9, genre: 'Tonic Water'},
+    { id: 10, genre: 'Tomato Juice'},
+    { id: 11, genre: 'Gin'},
+    { id: 12, genre: 'Cranberry Juice'},
+    { id: 13, genre: 'Orange Bitters'},
   ];
 
   constructor(private fb: FormBuilder) {

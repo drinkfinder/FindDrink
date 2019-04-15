@@ -6,6 +6,7 @@ namespace drinkfinder.Models
     {
         public int ingredientId { get; set; }
         public string ingredientName { get; set; }
+        
     }
 
 }

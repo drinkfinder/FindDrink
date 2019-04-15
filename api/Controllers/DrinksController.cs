@@ -17,23 +17,24 @@ namespace drinkfinder.Api.Controllers
         {
 
             this.db = db;
-
-            if (this.db.Drinks.Count() == 0){
-                this.db.Drinks.Add(new Drink(){
-                    drinkId = 1,
-                    drinkName = "Vodka Lemonade",
-                    drinkInstruction = "woot"
-                });
-
-                this.db.Drinks.Add(new Drink(){
-                    drinkId = 2,
-                    drinkName = "drink",
-                    drinkInstruction = "yup"
-                });
-                
-            }
-            this.db.SaveChanges();
         }
+
+        //     if (this.db.Drinks.Count() == 0){
+        //         this.db.Drinks.Add(new Drink(){
+        //             drinkId = 1,
+        //             drinkName = "Vodka Lemonade",
+        //             drinkInstruction = "woot"
+        //         });
+
+        //         this.db.Drinks.Add(new Drink(){
+        //             drinkId = 2,
+        //             drinkName = "drink",
+        //             drinkInstruction = "yup"
+        //         });
+                
+        //     }
+        //     this.db.SaveChanges();
+        // }
 
         [HttpGet]
         public IActionResult Get()

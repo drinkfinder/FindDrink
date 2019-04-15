@@ -1,16 +1,32 @@
-<h2>My Drinks</h2>
+<u><h2>Your Drinks</h2></u>
+<div id="wrapper">
+<nav>
+  <b routerLink="/detail">Gin and Tonic</b>
+  <p>
+    &nbsp;
+  </p>
+  <b routerLink="/ingredient-search">Vodka and Lemonade</b>
+  <p>
+    &nbsp;
+  </p>
+  <b routerLink="/drink-search">Manhatten</b>
+</nav>
+</div>
+<router-outlet></router-outlet>
 
-<div>
+
+
+<!--<div>
   <label>Drink name:
     <input #drinkName />
   </label>
-  <!-- (click) passes input value to add() and then clears the input -->
+  (click) passes input value to add() and then clears the input 
   <button (click)="add(drinkName.value); drinkName.value=''">
     add
   </button>
-</div>
+</div>-->
 
-<ul class="drinks">
+<!--<ul class="drinks">
   <li *ngFor="let drink of drinks">
     <a routerLink="/detail/{{drink.drinkId}}">
       <span class="badge">{{drink.drinkId}}</span> {{drink.drinkName}}
@@ -18,4 +34,4 @@
     <button class="delete" title="delete drink"
       (click)="delete(drink)">x</button>
   </li>
-</ul>
+</ul>-->
