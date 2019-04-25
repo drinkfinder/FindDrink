@@ -1,0 +1,14 @@
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.deps.json
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.runtimeconfig.json
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.runtimeconfig.dev.json
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.dll
+C:\AMIS3610\drinkfinder\finddrink\tests\bin\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.pdb
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.csprojAssemblyReference.cache
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.csproj.CoreCompileInputs.cache
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.AssemblyInfoInputs.cache
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.AssemblyInfo.cs
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.dll
+C:\AMIS3610\drinkfinder\finddrink\tests\obj\Debug\netcoreapp2.2\Drinkfinder.Api.Tests.pdb

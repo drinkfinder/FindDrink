@@ -12,7 +12,7 @@ import { DrinkSearchComponent } from './drink-search/drink-search.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail', component: DrinkDetailComponent },
+  { path: 'detail/:drinkId', component: DrinkDetailComponent },
   { path: 'drinks', component: DrinksComponent },
   { path: 'ingredients', component: IngredientsComponent },
   { path: 'ingredient-search', component: IngredientSearchComponent},

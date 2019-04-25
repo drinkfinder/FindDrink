@@ -68,5 +68,6 @@ export class IngredientFormComponent implements OnInit {
       .map((checked, index) => checked ? this.musicPreferences[index].id : null)
       .filter(value => value !== null);
     // Do something with the result
+    
   }
 }

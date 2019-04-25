@@ -14,8 +14,7 @@ const httpOptions = {
 @Injectable({ providedIn: 'root' })
 export class DrinkService {
 
-  private drinksUrl = 'https://localhost:5001/api/drinks';  // URL to web api
-
+  private drinksUrl = 'https://localhost:5001/api/drinks';// URL to web apig
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
@@ -92,6 +91,7 @@ export class DrinkService {
       catchError(this.handleError<any>('updateDrink'))
     );
   }
+  
 
   /**
    * Handle Http operation that failed.

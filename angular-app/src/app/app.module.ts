@@ -2,12 +2,14 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
-
+import { MatFormFieldModule, MatSelectModule } from '@angular/material';
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 /*import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';*/
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule }     from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { DrinkDetailComponent }  from './drink-detail/drink-detail.component';
@@ -22,6 +24,10 @@ import { IngredientFormComponent } from './ingredient-form/ingredient-form.compo
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    NgxMatSelectSearchModule,
     AppRoutingModule,
     HttpClientModule,
 

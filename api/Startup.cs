@@ -27,15 +27,13 @@ namespace drinkfinder.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-                services.AddDbContext<DrinkFinderContext>(options => 
+            services.AddDbContext<DrinkFinderContext>(options => 
             options.UseNpgsql(Configuration.GetConnectionString("DrinkFinderContext")));
             
             services.AddCors(options => {
                 options.AddPolicy("CorsPolicy", builder => 
                 {
-                    builder.WithOrigins("http://localhost:4200")
-                    .AllowAnyMethod()
-                    .AllowAnyHeader();
+                    builder.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
                 });
             });
 
@@ -55,6 +53,7 @@ namespace drinkfinder.Api
                 app.UseHsts();
             }
 
+        
             app.UseHttpsRedirection();
             app.UseCors("CorsPolicy");
             app.UseMvc();

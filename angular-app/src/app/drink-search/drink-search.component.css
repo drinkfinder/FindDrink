@@ -27,13 +27,19 @@
   .search-result li a:active {
     color: white;
   }
-  /* #search-box {
+  #search-box {
     width: 200px;
     height: 20px;
     
-  } */
+  }
   
-  
+  b {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-top: 100px;
+    padding-top: 0;
+    text-align: left;
+  }
   ul.search-result {
     margin-top: 0;
     padding-left: 0;
@@ -53,3 +59,5 @@ h5 {
     padding-top: 0;
     text-align: center;
   }
+  
+  

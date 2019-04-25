@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace drinkfinder.Models
 {
@@ -6,6 +8,9 @@ namespace drinkfinder.Models
     {
         public int ingredientId { get; set; }
         public string ingredientName { get; set; }
+
+        public int isSelected { get; set; }
+
         
     }
 

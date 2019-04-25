@@ -80,13 +80,13 @@ button.delete {
   color: white;
 }
 nav b {
-  /* font-family: 'Courier New', Courier, monospace;
+   font-family: 'Courier New', Courier, monospace;
   padding: 10px 10px;
   text-decoration: none;
   margin-top: 30px;
   display: inline-block;
   background-color: rgb(0, 0, 0);
-  border-radius: 10px; */
+  border-radius: 10px; 
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: .75em;

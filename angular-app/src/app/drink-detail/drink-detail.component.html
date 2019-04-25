@@ -1,4 +1,14 @@
-<u><h4>Gin and tonic Instuctiions</h4></u>
-<h5>
-    Mix gin with tonic water
-</h5>
+<div *ngIf="drink">
+    <h2>{{drink.drinkName | uppercase}} Details </h2>
+    <h3><div><span>id: </span>{{drink.drinkId}}</div>
+    <div>
+      <span>Name: </span>{{drink.drinkName}}
+    </div>
+    <div>
+      <span>Instructions: </span>{{drink.drinkInstruction}}
+    </div>
+  </h3>
+    
+    <button (click)="goBack()">go back</button>
+  </div>
+  <router-outlet></router-outlet>

@@ -21,10 +21,11 @@ export class DrinksComponent implements OnInit {
     this.drinkService.getDrinks()
     .subscribe(drinks => this.drinks = drinks);
   }
+  
   // figure this out
   /*add(name: string): void {
     Drink new1 {
-      instruction: 'mix',
+      instruction: 'mix'
       name = name.trim();
     }
     
@@ -33,8 +34,8 @@ export class DrinksComponent implements OnInit {
       .subscribe(drink => {
         this.drinks.push(drink);
       });
-  }*/
-
+  }
+  */
   delete(drink: Drink): void {
     this.drinks = this.drinks.filter(h => h !== drink);
     this.drinkService.deleteDrink(drink).subscribe();

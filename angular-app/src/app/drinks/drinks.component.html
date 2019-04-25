@@ -1,22 +1,22 @@
-<u><h2>Your Drinks</h2></u>
+<!---<u><h2>Your Drinks</h2></u>
 <div id="wrapper">
 <nav>
-  <b routerLink="/detail">Gin and Tonic</b>
+  <b routerLink="/detail">Details</b>
   <p>
     &nbsp;
   </p>
-  <b routerLink="/ingredient-search">Vodka and Lemonade</b>
+  <b routerLink="/ingredient-search">IngredientSearch</b>
   <p>
     &nbsp;
   </p>
-  <b routerLink="/drink-search">Manhatten</b>
+  <b routerLink="/drink-search">DrinkSearch</b>
 </nav>
 </div>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet>-->
 
 
 
-<!--<div>
+<!---<div>
   <label>Drink name:
     <input #drinkName />
   </label>
@@ -25,13 +25,13 @@
     add
   </button>
 </div>-->
-
-<!--<ul class="drinks">
+<router-outlet></router-outlet>
+<ul class="drinks">
   <li *ngFor="let drink of drinks">
     <a routerLink="/detail/{{drink.drinkId}}">
       <span class="badge">{{drink.drinkId}}</span> {{drink.drinkName}}
     </a>
-    <button class="delete" title="delete drink"
-      (click)="delete(drink)">x</button>
+    <!---<button class="delete" title="delete drink"
+      (click)="delete(drink)">x</button>-->
   </li>
-</ul>-->
+</ul>
