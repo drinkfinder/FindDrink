@@ -29,7 +29,7 @@ export class DrinkService {
       );
   }
 
-  /** GET hero by id. Return `undefined` when id not found */
+  /** GET drink by id. Return `undefined` when id not found */
   getDrinkNo404<Data>(id: number): Observable<Drink> {
     const url = `${this.drinksUrl}/?id=${id}`;
     return this.http.get<Drink[]>(url)

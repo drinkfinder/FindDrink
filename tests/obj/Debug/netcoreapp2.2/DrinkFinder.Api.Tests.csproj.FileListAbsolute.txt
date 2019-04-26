@@ -1,0 +1,14 @@
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.deps.json
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.runtimeconfig.json
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.runtimeconfig.dev.json
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.dll
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/bin/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.pdb
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.csprojAssemblyReference.cache
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.csproj.CoreCompileInputs.cache
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.AssemblyInfoInputs.cache
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.AssemblyInfo.cs
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.dll
+/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/obj/Debug/netcoreapp2.2/DrinkFinder.Api.Tests.pdb
