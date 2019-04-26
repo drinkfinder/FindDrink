@@ -13,7 +13,7 @@ namespace tests
         public void ChangeIsSelected(int incomingNumber)
         {
             //arrange
-            var ingredient = new IngredientTest(
+            var ingredient = new IngredientTest()
             {
                 ingredientId = 1,
                 ingredientName = "Bourbon",
@@ -52,7 +52,7 @@ namespace tests
 
             //assert 
             var expectedName = newName;
-            var actualName = book1.ingredientName;
+            var actualName = drink1.ingredientName;
 
             AssemblyLoadEventArgs.Equals(expectedName, actualName);
 
