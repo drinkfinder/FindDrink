@@ -1,6 +1,6 @@
 <div id="search-component">
   <b><span>Search Our Drinks:  </span></b><input #searchBox id="search-box" (input)="search(searchBox.value)" />
- 
+
   <ul class="search-result">
     <li *ngFor="let drink of drinks$ | async" >
       <a routerLink="/detail/{{drink.drinkId}}">
