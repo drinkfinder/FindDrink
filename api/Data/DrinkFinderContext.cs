@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace drinkfinder.Models
 {
-    public class DrinkFinderContext : DbContext
+
     {
         public DrinkFinderContext(DbContextOptions<DrinkFinderContext> options) : base(options)
 
