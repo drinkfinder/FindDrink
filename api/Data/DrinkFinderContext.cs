@@ -1,9 +1,10 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
 namespace drinkfinder.Models
 {
-    public class DrinkFinderContext : DbContext
+    public class DrinkFinderContext : IdentityDbContext<ApplicationUser>
     {
         public DrinkFinderContext(DbContextOptions<DrinkFinderContext> options) : base(options)
 
