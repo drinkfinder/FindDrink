@@ -1,11 +1,14 @@
 <div *ngIf="drink">
-  <h2>{{drink.drinkName | uppercase}} Details</h2>
-  <div><span>id: </span>{{drink.drinkId}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="drink.drinkName" placeholder="name"/>
-    </label>
+    <h2>{{drink.drinkName | uppercase}} Details </h2>
+    <h3><div><span>id: </span>{{drink.drinkId}}</div>
+    <div>
+      <span>Name: </span>{{drink.drinkName}}
+    </div>
+    <div>
+      <span>Instructions: </span>{{drink.drinkInstruction}}
+    </div>
+  </h3>
+    
+    <button (click)="goBack()">go back</button>
   </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
-</div>
+  <router-outlet></router-outlet>

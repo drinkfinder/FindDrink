@@ -87,9 +87,13 @@ export class IngredientService {
 
   /** PUT: update the ingredient on the server */
   updateIngredient (ingredient: Ingredient): Observable<any> {
-    return this.http.put(this.ingredientsUrl, ingredient, httpOptions).pipe(
-      tap(_ => this.log(`updated ingredient id=${ingredient.ingredientId}`)),
+    
+    var putUrl = this.ingredientsUrl + '/' + ingredient.ingredientId;
+    return this.http.put(putUrl, ingredient, httpOptions).pipe(
+      tap(_ => this.log(`updated ingredient isSelected=${ingredient.isSelected}`)),
       catchError(this.handleError<any>('updateIngredient'))
+
+    
     );
   }
 
@@ -103,6 +107,7 @@ export class IngredientService {
     return (error: any): Observable<T> => {
 
       // TODO: send the error to remote logging infrastructure
+
       console.error(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption

@@ -30,10 +30,34 @@
   #search-box {
     width: 200px;
     height: 20px;
+    
   }
   
-  
+  b {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-top: 100px;
+    padding-top: 0;
+    text-align: left;
+  }
   ul.search-result {
     margin-top: 0;
     padding-left: 0;
   }
+
+  h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-top: 100px;
+    padding-top: 0;
+    text-align: center;
+}
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  

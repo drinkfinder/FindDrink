@@ -5852,12 +5852,18 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/Users/matthewkane/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\Heath\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> 7fd0719c1d4e9630e39ea763e8bdee32bc79231c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/DrinkFinder.Api.Tests.csproj",
       "projectName": "DrinkFinder.Api.Tests",
       "projectPath": "/Users/matthewkane/Desktop/AMIS3610/drinkfinder/tests/DrinkFinder.Api.Tests.csproj",
@@ -5869,6 +5875,19 @@
       ],
       "configFilePaths": [
         "/Users/matthewkane/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "C:\\AMIS3610\\drinkfinder\\finddrink\\tests\\Drinkfinder.Api.Tests.csproj",
+      "projectName": "Drinkfinder.Api.Tests",
+      "projectPath": "C:\\AMIS3610\\drinkfinder\\finddrink\\tests\\Drinkfinder.Api.Tests.csproj",
+      "packagesPath": "C:\\Users\\Heath\\.nuget\\packages\\",
+      "outputPath": "C:\\AMIS3610\\drinkfinder\\finddrink\\tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Heath\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 7fd0719c1d4e9630e39ea763e8bdee32bc79231c
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

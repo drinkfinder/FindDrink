@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using drinkfinder.Models;
 using Microsoft.AspNetCore.Mvc;
+using Npgsql;
 
 namespace drinkfinder.Api.Controllers
 {
@@ -12,29 +13,14 @@ namespace drinkfinder.Api.Controllers
     public class IngredientsController : ControllerBase{
 
         private readonly DrinkFinderContext db;
-    
+
+          
         public IngredientsController(DrinkFinderContext db)
         {
-
-            this.db = db;
-
-            if (this.db.Ingredients.Count() == 0){
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 1,
-                    ingredientName = "Orange Juice"
-                });
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 2,
-                    ingredientName = "Whiskey"
-                });
-                this.db.Ingredients.Add(new Ingredient(){
-                    ingredientId = 3,
-                    ingredientName = "Gin"
-                });
-                
-            }
-            this.db.SaveChanges();
+           this.db = db;
         }
+
+     
 
         [HttpGet]
         public IActionResult Get()
@@ -82,23 +68,23 @@ namespace drinkfinder.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]Ingredient ingredient)
+        public IActionResult Put([FromBody]Ingredient ingredient)
         {
-            if (ingredient == null || ingredient.ingredientId != id)
+            if (ingredient == null)
             {
                 return BadRequest();
             }
 
-            var ingredientToEdit = db.Ingredients.FirstOrDefault(b => b.ingredientId == id);
-            if (ingredientToEdit == null)
-            {
-                return NotFound();
-            }
+           // var ingredientToEdit = db.Ingredients.FirstOrDefault(b => b.ingredientId == id);
+            //if (ingredientToEdit == null)
+            // {
+            //     return NotFound();
+            // }
 
-            ingredientToEdit.ingredientName = ingredient.ingredientName;
+            // ingredientToEdit.ingredientName = ingredient.ingredientName;
             
 
-            db.Ingredients.Update(ingredientToEdit);
+            db.Ingredients.Update(ingredient);
             db.SaveChanges();
 
             return NoContent();

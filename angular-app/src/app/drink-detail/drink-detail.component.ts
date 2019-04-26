@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -11,8 +11,10 @@ import { DrinkService }  from '../drink.service';
   styleUrls: [ './drink-detail.component.css' ]
 })
 export class DrinkDetailComponent implements OnInit {
-  @Input() drink: Drink;
+  drink: Drink;
+  
 
+  
   constructor(
     private route: ActivatedRoute,
     private drinkService: DrinkService,
@@ -23,8 +25,15 @@ export class DrinkDetailComponent implements OnInit {
     this.getDrink();
   }
 
+  
+      
+    
+
+  
+
   getDrink(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
+    
+    const id = +this.route.snapshot.paramMap.get('drinkId');
     this.drinkService.getDrink(id)
       .subscribe(drink => this.drink = drink);
   }

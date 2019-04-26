@@ -12,28 +12,34 @@ namespace drinkfinder.Api.Controllers
     public class DrinksController : ControllerBase{
 
         private readonly DrinkFinderContext db;
-    
+        
         public DrinksController(DrinkFinderContext db)
         {
 
             this.db = db;
 
-            if (this.db.Drinks.Count() == 0){
-                this.db.Drinks.Add(new Drink(){
-                    drinkId = 1,
-                    drinkName = "Vodka Lemonade",
-                    drinkInstruction = "woot"
-                });
-
-                this.db.Drinks.Add(new Drink(){
-                    drinkId = 2,
-                    drinkName = "drink",
-                    drinkInstruction = "yup"
-                });
-                
-            }
-            this.db.SaveChanges();
+            
         }
+        
+
+
+
+        //     if (this.db.Drinks.Count() == 0){
+        //         this.db.Drinks.Add(new Drink(){
+        //             drinkId = 1,
+        //             drinkName = "Vodka Lemonade",
+        //             drinkInstruction = "woot"
+        //         });
+
+        //         this.db.Drinks.Add(new Drink(){
+        //             drinkId = 2,
+        //             drinkName = "drink",
+        //             drinkInstruction = "yup"
+        //         });
+                
+        //     }
+        //     this.db.SaveChanges();
+        // }
 
         [HttpGet]
         public IActionResult Get()
