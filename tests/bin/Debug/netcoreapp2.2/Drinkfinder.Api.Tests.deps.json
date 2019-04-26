@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "Drinkfinder.Api.Tests/1.0.0": {
+      "DrinkFinder.Api.Tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.9.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
         "runtime": {
-          "Drinkfinder.Api.Tests.dll": {}
+          "DrinkFinder.Api.Tests.dll": {}
         }
       },
       "Microsoft.CodeCoverage/15.9.0": {
@@ -1007,7 +1007,7 @@
         "runtime": {
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1056,7 +1056,7 @@
     }
   },
   "libraries": {
-    "Drinkfinder.Api.Tests/1.0.0": {
+    "DrinkFinder.Api.Tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
