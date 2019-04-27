@@ -1,6 +1,4 @@
 using System;
-using Xunit;
-using Drinkfinder.Models;
 
 namespace tests
 {
@@ -48,11 +46,11 @@ namespace tests
             //act
 
             var newName = "Chad's Whiskey";
-            drink1.ChangeName(newName);
+            ingredient.ChangeName(newName);
 
             //assert 
             var expectedName = newName;
-            var actualName = book1.ingredientName;
+            var actualName = ingredient.ingredientName;
 
             AssemblyLoadEventArgs.Equals(expectedName, actualName);
 
