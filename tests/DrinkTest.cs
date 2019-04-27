@@ -9,7 +9,7 @@ namespace tests
         public string drinkInstruction { get; set }
         public int drinkSelected { get; set; }
 
-        public void ChangeIsSelected(int incomingNumber)
+        public void ChangeDrinkSelected(int number)
         {
             //arrange
             var drink = new DrinkTest(
@@ -23,11 +23,11 @@ namespace tests
 
             //act
             var newNumber = 1;
-            drink.ChangeIsSelected(newNumber);
+            drink.ChangeDrinkSelected(number);
 
             //assert 
             var expectedSelected = 1;
-            var actualSelected = drink.isSelected;
+            var actualSelected = drink.drinkSelected;
 
             AssemblyLoadEventArgs.Equals(expectedSelected, actualSelected);
         }
